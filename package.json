@@ -1,0 +1,38 @@
+{
+  "name": "create-nbs",
+  "version": "1.0.0",
+  "description": "",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "create-nbs": "./dist/index.mjs"
+  },
+  "scripts": {
+    "build": "unbuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nb-saas/create-nbs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nb-saas/create-nbs/issues"
+  },
+  "homepage": "https://github.com/nb-saas/create-nbs#readme",
+  "devDependencies": {
+    "unbuild": "^1.2.1"
+  }
+}
